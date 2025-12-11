@@ -6,7 +6,13 @@
   Encourage users to open new tabs for steps!
 -->
 
-## Step 1: Create a branch
+## Tehtävä 1: Esivalmistelut ja ensimmäinen commit
+
+### Esivalmistelut
+
+1. Aloita tarkistamalla löytyykö koneeltasi jo git (voit käyttää windowsin hakua). Jos gitiä ei ole vielä asennettu, asenna se [täältä](https://git-scm.com/install/windows)
+  -Käytä asennuksessa oletusasetuksia
+2. 
 
 _Welcome to "Introduction to GitHub"! :wave:_
 
