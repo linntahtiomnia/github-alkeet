@@ -41,12 +41,6 @@ Ennen kuin aloitat, varmista, että olet tehnyt moodlen tehtävän "gitin käytt
    - Branch, jossa olet, pitäisi näkyä tiedosto polun vieressä
     ![create-branch](/images/create-branch.png)
 
-4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
-5. Click **Create branch: my-first-branch** to create your branch.
+4. Olet nyt tehnyt branchin paikalliseen repositorioosi, mutta se pitää vielä julkaista, jotta se näkyy githubissa. Julkaise branchi komenolla `git push -u origin my-first-branch`
 
-   ![create-branch-button](/images/create-branch-button.png)
-
-   The branch will automatically switch to the one you have just created.
-   The **main** branch drop-down bar will reflect your new branch and display the new branch name.
-
-6. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+5. Odota n. 20 sekuntia ja päivitä sitten tämä sivu. [GitHub Actions](https://docs.github.com/en/actions) päivittää seuraavan tehtään ohjeen tähän automaattisesti.

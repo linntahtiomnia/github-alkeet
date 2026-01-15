@@ -4,40 +4,46 @@
   Define terms and link to docs.github.com.
 -->
 
-## Step 2: Commit a file
+## Tehtävä 2: Lisätään uusi tiedosto ja tehdään commit
 
-_You created a branch! :tada:_
+_Teit uuden branchin! :tada:_
 
-Creating a branch allows you to edit your project without changing the `main` branch. Now that you have a branch, it’s time to create a file and make your first commit!
+Brancheja (suomeksi haara) käytetään silloin, kun halutaan muokata projektia ilman, että muutokset menevät päähaaraan eli `main` -branchiin.
 
-**What is a commit?**: A _[commit](https://docs.github.com/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)_ is a set of changes to the files and folders in your project. A commit exists in a branch. For more information, see "[About commits](https://docs.github.com/en/pull-requests/committing-changes-to-your-project/creating-and-editing-commits/about-commits)".
+Tässä tehtävässä lisätään uusi tiedosto aiemmin luotuun branchiin, tehdään commit ja 'pushataan' muutoset githubiin.
 
-### :keyboard: Activity: Your first commit
+### :keyboard: Tehtävä: Ensimmäinen commit
 
-The following steps will guide you through the process of committing a change on GitHub. A commit records changes in renaming, changing content within, creating a new file, and any other changes made to your project. For this exercise, committing a change requires first adding a new file to your new branch.
+1. Pidä nämä ohjeet auki selaimessa ja noudata ohjeita git bashissa ja editorissa.
 
-> [!NOTE]
-> `.md` is a file extension that creates a Markdown file. You can learn more about Markdown by visiting "[Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)" in our docs or by taking the "[Communicating using Markdown](https://github.com/skills/communicate-using-markdown)" Skills course.
+2. Tee uusi markdown tiedosto nimeltä 'uusi_tiedosto.md' ja avaa se vs codessa suorittamalla git bash terminaalissa komento `code uusi_tiedosto.md`
 
-1. On the **< > Code** tab in the header menu of your repository, make sure you're on your new branch `my-first-branch`.
+   - Markdown on tiedostotyyppi, jonka pystyy helposti kääntämään pdf:ksi. Github osaa automaattisesti näyttää markdown tiedostot luettavassa muodossa, ja esimerkiksi readme tiedostot ovat yleensä markdown formaatissa.
 
-2. Select the **Add file** drop-down and click **Create new file**.
-
-   ![create new file option](/images/create-new-file.png)
-
-3. In the **Name your file...** field, enter `PROFILE.md`.
-
-4. In the **Enter file contents here** area, copy the following content to your file:
-
+3. Edellisen komennon jälkeen sinulla pitäisi nyt olla auki vs code ja siellä luomasi markdown tiedosto. Kopioi tiedostoon seuraava teksti ja tallenna (ctrl+S pikanäppäin tallentaa tiedoston)
    ```
-   Welcome to my GitHub profile!
+   Tämä on uusi tiedosto!
    ```
 
-   ![profile.md file screenshot](/images/my-profile-file.png)
+4. Palaa nyt git bashiin ja suorita komento `git status`
+   - `git status` komennolla näet, mihin tiedostoihin on tehty muutoksia, kun verrataan paikallista ja remote versiota repositoriosta
+   - Äsken luomasi tiedosto pitäisi näkyä listassa punaisena, koska se on 'untracked' eli sitä ei ole olemassa remote repositoriossa
+    ![git-status-example](/images/git-status-example.png)
 
-5. Click **Commit changes...** in the upper right corner above the contents box. For commits, you can enter a short commit message that describes what changes you made. This message helps others know what's included in your commit. GitHub offers a simple default message, but let's change it slightly for practice. First, enter `Add PROFILE.md` in the first text-entry field titled "Commit message".
+5. Lisätään tiedosto staged tilaan (eli odottamaan commitin tekoa) `git add uusi_tiedosto.md` komennolla. 
+   - `git add` -komento voidaan suorittaa joko yksittäiselle tiedostolle lisäämällä komennon perään lisättävän tiedoston nimi tai lisätä kaikki muutoksia sisältävät tiedostot kerralla komennolla `git add .`
 
-   ![screenshot of adding a new file with a commit message](/images/commit-full-screen.png)
+6. Suorita `git status` komento uudelleen. 
+   - Uuden tiedoston pitäisi nyt lukea "changes to be committed" listassa vihreänä
+   ![stage-changes-example](/images/stage-changes-example.png)
+   - Nyt olemme valmiita tekemään commitin. Commitiin lisätään kaikki "changes to be committed" listan muutokset.
+   - Muutoksia voi tarkastella tarkemmin `git diff` komennolla. Jos haluat verrata paikallisia ja remote versioita, suorita komento `git diff origin`
 
-6. In this lesson, we'll ignore the other fields and click **Commit changes**.
-7. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+7. Tee seuraavaksi commit. Pystymme tekemään commitin ja lisäämään sille viestin yhdellä komennolla `git commit -m "lisää ensimmäinen tiedosto"`
+   - On mahdollista myös suorittaa pelkkä `git commit` -komento ja sen jälkeen kirjoittaa commit-viesti avautuvassa editorissa.
+   - Hyvän commit-viestin sisällöstä on lisätietoa moodlessa
+   - Voit nyt suorittaa vielä kerran `git status`-komennon. Tietokoneen pitäisi kertoa sinulle, että branchisi on yhden commitin verran edellä remote versiota.
+
+8. "Pushaa" commit suorittamalla komento `git push`
+
+9. Odota jälleen n. 20 sekuntia ja sitten päivitä tämä sivu. [GitHub Actions](https://docs.github.com/en/actions) päivittää seuraavan tehtään ohjeen tähän automaattisesti.

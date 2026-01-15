@@ -1,5 +1,3 @@
-<!-- readme -->
-
 ## Git perusteet
 
 Näissä tehtävissä opetellaan gitin ja githubin käytön perusteet. Lisämateriaalia tehtävien teon avuksi löytyy moodlesta.
