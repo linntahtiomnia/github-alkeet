@@ -6,39 +6,39 @@
   Encourage users to open new tabs for steps!
 -->
 
-## Tehtävä 1: Esivalmistelut ja ensimmäinen commit
+## Tehtävä 1: Esivalmistelut ja ensimmäinen haara eli branch
 
 ### Esivalmistelut
 
-1. Aloita tarkistamalla löytyykö koneeltasi jo git (voit käyttää windowsin hakua). Jos gitiä ei ole vielä asennettu, asenna se [täältä](https://git-scm.com/install/windows)
-  -Käytä asennuksessa oletusasetuksia
-2. 
+Ennen kuin aloitat, varmista, että olet tehnyt moodlen tehtävän "gitin käyttöönotto"
 
-_Welcome to "Introduction to GitHub"! :wave:_
+### :keyboard: Tehtävä: Repositorion kloonaus ja ensimmäinen haara eli branch
 
-**What is GitHub?**: GitHub is a collaboration platform that uses _[Git](https://docs.github.com/get-started/quickstart/github-glossary#git)_ for versioning. GitHub is a popular place to share and contribute to [open-source](https://docs.github.com/get-started/quickstart/github-glossary#open-source) software.
-<br>:tv: [Video: What is GitHub?](https://www.youtube.com/watch?v=pBy1zgt0XPc)
+1. Pidä nämä ohjeet auki yhdellä välilehdellä ja avaa selaimessa toinen välilehti, jossa avaat githubissa tämän saman repositorion. 
 
-**What is a repository?**: A _[repository](https://docs.github.com/get-started/quickstart/github-glossary#repository)_ is a project containing files and folders. A repository tracks versions of files and folders. For more information, see "[About repositories](https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories)" from GitHub Docs.
+2. Seuraavaksi haluamme luoda paikallisen kloonin repositoriosta. Voit käyttää tähän vs coden työkaluja tai tehdä sen komentorivillä. Alla on ohjeet komentorivin käyttöön mutta moodlesta löytyy ohjeet myös vs coden työkaluille. Komentorivin käytön opettelu on suositeltavaa!
 
-**What is a branch?**: A _[branch](https://docs.github.com/en/get-started/quickstart/github-glossary#branch)_ is a parallel version of your repository. By default, your repository has one branch named `main` and it is considered to be the definitive branch. Creating additional branches allows you to copy the `main` branch of your repository and safely make any changes without disrupting the main project. Many people use branches to work on specific features without affecting any other parts of the project.
+   1. Klikkaa vihreää **< > Code** valikkoa ja kopioi https välilehdeltä löytyvä linkki
 
-Branches allow you to separate your work from the `main` branch. In other words, everyone's work is safe while you contribute. For more information, see "[About branches](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches)".
+   2. Avaa nyt koneellasi git bash komentorivi
+   
+   3. Päätä, minne omalla koneellasi haluat tallentaa repositorion. Navigoi valitsemaasi hakemistoon (kansioon) komentorivillä käyttäen _cd_ komentoa. 
+      - Git bash aukeaa automaattisesti c/Users/käyttäjänimi hakemistosta. 
+      - Näet tämän hetkisestä sijainnistasi löytyvät tiedostot ja alahakemistot komennolla _ls_.
+      - Pääset esimerkiksi Documents hakemistoon komennolla _cd Documents_
+      ![git-bash-example](/images/git-bash-example.png)
 
-**What is a profile README?**: A _[profile README](https://docs.github.com/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)_ is essentially an "About me" section on your GitHub profile where you can share information about yourself with the community on GitHub.com. GitHub shows your profile README at the top of your profile page. For more information, see "[Managing your profile README](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme)".
+   4. Kun olet navigtoinut sopivaan kansioon kloonaa repositosio komennolla `git clone aiemmin-kopioitu-linkki`
+      - Huom! ctrl+V ei toimi git bashissa, käytä sen sijaan shift+ins tai klikkaa hiiren oikealla näppäimellä ja valitse paste
+      ![git-clone-example](/images/git-clone-example.png)
+      - Komento luo paikallisen version repositoriosta, joka on linkitetty githubissa löytyvään remote versioon.
 
-![profile-readme-example](/images/profile-readme-example.png)
+   5. Lopuksi navigoi kloonaamaasi repositorioon cd komennolla `cd github-alkeet`
 
-### :keyboard: Activity: Your first branch
-
-1. Open a new browser tab and navigate to your newly made repository. Then, work on the steps in your second tab while you read the instructions in this tab.
-2. Navigate to the **< > Code** tab in the header menu of your repository.
-
-   ![code-tab](/images/code-tab.png)
-
-3. Click on the **main** branch drop-down.
-
-   ![main-branch-dropdown](/images/main-branch-dropdown.png)
+3. Luo seuraavaksi uusi haara eli branch nimeltä _my-first-branch_. Saat luotua branchin komennolla `git checkout -b my-first-branch`
+   - `git checkout -b` komennossa git checkout kertoo tietokoneelle, että haluamme vaihtaa branchiä. -b taas kertoo, että olemme siirtymässä aivan uuteen branchiin. Tietokone siis ensin tekee uuden branchin ja sen jälkeen siirtyy sinne.
+   - Saman voisi tehdä myös kahdella erillisellä komennolla: 1. `git branch my-new-branch` 2. `git checkout my-new-branch`
+   -
 
 4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
 5. Click **Create branch: my-first-branch** to create your branch.
