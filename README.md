@@ -8,6 +8,7 @@
 -->
 
 ## Git perusteet
+<!-- readme -->
 
 Näissä tehtävissä opetellaan gitin ja githubin käytön perusteet. Lisämateriaalia tehtävien teon avuksi löytyy moodlesta.
 
@@ -25,5 +26,5 @@ Kun olet tehnyt tehtävät, näytä opettajalle, että olet saanut ne valmiiksi.
 
 [![Aloita](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=linntahtiomnia&template_name=introduction-to-github2&owner=%40me&name=skills-introduction-to-github3&description=My+clone+repository&visibility=public)
 
-
+<!-- endreadme -->
 <footer>

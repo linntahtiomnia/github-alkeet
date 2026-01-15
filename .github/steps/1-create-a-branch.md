@@ -35,10 +35,11 @@ Ennen kuin aloitat, varmista, että olet tehnyt moodlen tehtävän "gitin käytt
 
    5. Lopuksi navigoi kloonaamaasi repositorioon cd komennolla `cd github-alkeet`
 
-3. Luo seuraavaksi uusi haara eli branch nimeltä _my-first-branch_. Saat luotua branchin komennolla `git checkout -b my-first-branch`
+3. Luo seuraavaksi uusi haara eli branch nimeltä _my-first-branch_. Saat luotua branchin komennolla `git checkout -b my-first-branch`. Huom! on tärkeää, että käytät tismalleen samaa nimeä branchille, jotta tehtävä menee läpi.
    - `git checkout -b` komennossa git checkout kertoo tietokoneelle, että haluamme vaihtaa branchiä. -b taas kertoo, että olemme siirtymässä aivan uuteen branchiin. Tietokone siis ensin tekee uuden branchin ja sen jälkeen siirtyy sinne.
    - Saman voisi tehdä myös kahdella erillisellä komennolla: 1. `git branch my-new-branch` 2. `git checkout my-new-branch`
-   -
+   - Branch, jossa olet, pitäisi näkyä tiedosto polun vieressä
+    ![create-branch](/images/create-branch.png)
 
 4. In the field, name your branch `my-first-branch`. In this case, the name must be `my-first-branch` to trigger the course workflow.
 5. Click **Create branch: my-first-branch** to create your branch.
