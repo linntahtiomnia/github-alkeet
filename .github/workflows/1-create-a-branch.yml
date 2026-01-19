@@ -55,11 +55,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Let's get all the branches.
-          ref: main
 
       # In README.md, switch step 1 for step 2.
       - name: Update to step 2
         run: |
+          git fetch origin main
+          git checkout main
           cp ./.github/steps/2-commit-a-file.md ./README.md
           echo "2" > ./.github/steps/-step.txt
       - name: Commit changes

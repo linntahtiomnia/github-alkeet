@@ -53,11 +53,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Let's get all the branches.
-          ref: main
 
       # In README.md, switch step 2 for step 3.
       - name: Update to step 3
         run: |
+          git fetch origin main
+          git checkout main
           cp ./.github/steps/3-open-a-pull-request.md ./README.md
           echo "3" > ./.github/steps/-step.txt
       - name: Commit changes
