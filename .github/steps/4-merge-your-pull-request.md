@@ -5,27 +5,22 @@
   if users accidentally closed without merging.
 -->
 
-## Step 4: Merge your pull request
+## Tehtävä 4: Mergeä pull request
 
-_Nicely done! :sunglasses:_
+Seuraavaksi "mergeämme", eli yhdistämme, pull requestin main branchiin.
 
-You successfully created a pull request. You can now merge your pull request.
+Lisätietoa: [Merging a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)
 
-**What is a merge?**: A _[merge](https://docs.github.com/en/get-started/quickstart/github-glossary#merge)_ adds the changes in your pull request and branch into the `main` branch. For more information about merges, see "[Merging a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request)."
-
-As noted in the previous step, you may have seen evidence of GitHub Actions running which automatically progresses your instructions to the next step. You'll have to wait for it to finish before you can merge your pull request. It will be ready when the merge pull request button is green.
+Saatat joutua odottamaan hetken, ennen kuin merge nappi aktivoituu, sillä Github Actions suorittaa toimintoja taustalla, ja mergen voi tehdä vasta, kun ne ovat valmiit. **Merge pull request** nappi muuttuu vihreäksi, kun se on valmis.
 
 ![screenshot of green merge pull request button](/images/Green-merge-pull-request.png)
 
-### :keyboard: Activity: Merge the pull request
+### :keyboard: Tehtävä: Mergeä pull request
 
-1. Click **Merge pull request**.
-2. Click **Confirm merge**.
-3. Once your branch has been merged, you don't need it anymore. To delete this branch, click **Delete branch**.
+1. Klikkaa **Merge pull request**.
+2. Klikkaa **Confirm merge**.
+3. Kun branch on mergetty, et tarvitse sitä enää. Poista branch klikkaamalla **Delete branch**.
 
    ![screenshot showing delete branch button](/images/delete-branch.png)
 
-4. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-
-> [!NOTE]
-> Check out the **Finish** step to see what you can learn next!
+4. Odota n. 20 sekuntia ja päivitä tämä ohje sivu. [GitHub Actions](https://docs.github.com/en/actions) päivittää ohjeet automaattisesti.
