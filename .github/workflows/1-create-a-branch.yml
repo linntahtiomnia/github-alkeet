@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: main
       - id: get_step
         run: |
           echo "current_step=$(cat ./.github/steps/-step.txt)" >> $GITHUB_OUTPUT
@@ -69,4 +71,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add README.md ./.github/steps/-step.txt
           git commit -m "Update README to step 2"
+          git push origin main
           git push origin main
