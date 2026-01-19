@@ -58,10 +58,11 @@ jobs:
       - name: Update to step X
         run: |
           cp ./.github/steps/X-finish.md ./README.md
+          echo "X" > ./.github/steps/-step.txt
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
+          git add README.md ./.github/steps/-step.txt
           git commit -m "Update README to final step"
           git push

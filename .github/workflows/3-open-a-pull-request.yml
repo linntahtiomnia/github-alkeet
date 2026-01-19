@@ -62,10 +62,11 @@ jobs:
       - name: Update to step 4
         run: |
           cp ./.github/steps/4-merge-your-pull-request.md ./README.md
+          echo "4" > ./.github/steps/-step.txt
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
+          git add README.md ./.github/steps/-step.txt
           git commit -m "Update README to step 4"
           git push

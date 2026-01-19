@@ -58,10 +58,11 @@ jobs:
       - name: Update to step 3
         run: |
           cp ./.github/steps/3-open-a-pull-request.md ./README.md
+          echo "3" > ./.github/steps/-step.txt
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add README.md
+          git add README.md ./.github/steps/-step.txt
           git commit -m "Update README to step 3"
           git push
