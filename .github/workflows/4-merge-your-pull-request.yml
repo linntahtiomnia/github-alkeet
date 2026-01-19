@@ -56,9 +56,12 @@ jobs:
 
       # In README.md, switch step 4 for step X.
       - name: Update to step X
-        uses: skills/action-update-step@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 4
-          to_step: X
-          branch_name: my-first-branch
+        run: |
+          cp ./.github/steps/X-finish.md ./README.md
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update README to final step"
+          git push

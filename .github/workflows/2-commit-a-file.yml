@@ -56,9 +56,12 @@ jobs:
 
       # In README.md, switch step 2 for step 3.
       - name: Update to step 3
-        uses: skills/action-update-step@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 2
-          to_step: 3
-          branch_name: my-first-branch
+        run: |
+          cp ./.github/steps/3-open-a-pull-request.md ./README.md
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update README to step 3"
+          git push

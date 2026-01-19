@@ -60,9 +60,12 @@ jobs:
 
       # In README.md, switch step 3 for step 4.
       - name: Update to step 4
-        uses: skills/action-update-step@v2
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          from_step: 3
-          to_step: 4
-          branch_name: my-first-branch
+        run: |
+          cp ./.github/steps/4-merge-your-pull-request.md ./README.md
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add README.md
+          git commit -m "Update README to step 4"
+          git push
