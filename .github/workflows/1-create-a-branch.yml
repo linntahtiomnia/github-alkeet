@@ -55,6 +55,7 @@ jobs:
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Let's get all the branches.
+          ref: main
 
       # In README.md, switch step 1 for step 2.
       - name: Update to step 2
@@ -67,4 +68,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add README.md ./.github/steps/-step.txt
           git commit -m "Update README to step 2"
-          git push
+          git push origin main

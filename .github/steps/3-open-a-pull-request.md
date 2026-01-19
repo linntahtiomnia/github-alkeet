@@ -12,13 +12,11 @@ Olet nyt tehnyt commitin, jonka pitäisi näkyä täällä Githubissa. Seuraavak
 
 ### :keyboard: Tehtävä: Tee pull request
 
-Saatat nähdä githubissa viestin, joka kertoo edellisessä kohdassa tekemästäsi git push:sta. Ilmoituksessa on nappi **Compare & pull request**.
+Pidä nämä ohjeet auki yhdessä välilehdessä ja seuraa ohjeita toisessa välilehdessä, jossa tämä repositorio on auki. 
 
+1. Avaa välilehti, jolle avasit tämän repositorion aikaisemmin ja päivitä sivu. Saatat nähdä viestin, joka kertoo edellisessä kohdassa tekemästäsi git push:sta. Ilmoituksessa on nappi **Compare & pull request**. Paina tätä nappia ja siirry suoraan kohtaan 6. Muussa tapauksessa jatka ohjeiden seuraamista seuraavasta kohdasta.
 ![screenshot of message and button](/images/compare-and-pull-request.png)
-
-Voit painaa tätä nappia, joka tekee pull requestin automaattisesti. Jos klikkaat nappia **Compare & pull request**, voit siirtyä suoraan tehtävän kohtaan 6. Jos et paina nappia, alla on ohjeet, miten tehdä pull request manuaalisesti.
-
-1. Klikkaa **Pull requests** välilehteä github repositoriossasi (kannattaa avata repositorio toisessa välilehdessä ja pitää nämä ohjeet auki toisessa)
+2. Klikkaa **Pull requests** välilehteä github repositoriossasi (kannattaa avata repositorio toisessa välilehdessä ja pitää nämä ohjeet auki toisessa)
 2. Klikkaa **New pull request**.
 3. Valitse **base:** dropdownista **main** vaihtoehto
 4. Valitse **compare:** dropdownista `my-first-branch`.
