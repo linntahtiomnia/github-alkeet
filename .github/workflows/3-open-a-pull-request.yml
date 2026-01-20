@@ -61,6 +61,8 @@ jobs:
       # In README.md, switch step 3 for step 4.
       - name: Update to step 4
         run: |
+          git fetch origin main
+          git checkout main
           cp ./.github/steps/4-merge-your-pull-request.md ./README.md
           echo "4" > ./.github/steps/-step.txt
       - name: Commit changes
