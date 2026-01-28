@@ -16,7 +16,7 @@ Tässä tehtävässä lisätään uusi tiedosto aiemmin luotuun branchiin, tehd�
 
 1. Pidä nämä ohjeet auki selaimessa ja noudata ohjeita git bashissa ja editorissa.
 
-2. Avaa taas git bash ja suorita komento `git pull`
+2. Avaa taas git bash. Varmista, että olet edelleen repositorion kansiossa ja aiemmin tekemässäsi branchissa, ja suorita komento `git pull`
    - Tällä komennolla varmistat, että lokaali versiosi sisältää kaikki remote version muutokset.
 
 3. Suorita git bashissa komento `code uusi_tiedosto.md`. Se tekee uuden markdown tiedoston nimeltä 'uusi_tiedosto.md' ja avaa sen vs codessa.

@@ -16,7 +16,7 @@ Ennen kuin aloitat, varmista, että olet tehnyt moodlen tehtävän "gitin käytt
 
 1. Pidä nämä ohjeet auki yhdellä välilehdellä ja avaa selaimessa toinen välilehti, jossa avaat githubissa tämän saman repositorion. 
 
-2. Seuraavaksi haluamme luoda paikallisen kloonin repositoriosta. Voit käyttää tähän vs coden työkaluja tai tehdä sen komentorivillä. Alla on ohjeet komentorivin käyttöön mutta moodlesta löytyy ohjeet myös vs coden työkaluille. Komentorivin käytön opettelu on suositeltavaa!
+2. Seuraavaksi haluamme luoda paikallisen kloonin repositoriosta. Käytämme kloonaukseen git bash komentoriviä.
 
    1. Klikkaa vihreää **< > Code** valikkoa ja kopioi https välilehdeltä löytyvä linkki
 
